@@ -121,3 +121,5 @@ Atomist API.  Check the [Developer Quick Start][quick-start] for
 instructions to get started locally.
 
 [quick-start]: ../quick-start.md (Atomist Developer Quick Start)
+
+## This is an empty section
