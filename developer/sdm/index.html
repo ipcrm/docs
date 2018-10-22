@@ -1,0 +1,1753 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation for Atomist - How Teams Deliver Software">
+      
+      
+      
+        <meta name="author" content="The Atomist Team">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>About the SDM - Atomist Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/fix-mime-type-application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/fix-mime-type-application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/fix-mime-type-material-icons.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/fix-mime-type-extra.css">
+    
+    
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MZ8NMFS');</script>
+    <!-- End Google Tag Manager -->
+<link rel="stylesheet" href="https://use.typekit.net/viv5qyy.css">
+
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="white" data-md-color-accent="teal">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../#creating-an-sdm-project" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ8NMFS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Atomist Documentation" class="md-header-nav__button md-logo">
+          <img src="../../img/atomist-developer-docs-logo.png" alt="Atomist Developer Docs">
+        </a>
+      </div>
+
+      <div class="md-flex__cell md-flex__cell--stretch visit-main-site">
+        <a href="https://www.atomist.com" target="_blank">Visit Atomist.com &raquo;</a>
+      </div>
+    </div>
+  </nav>
+  <div class="title-and-search-bar">
+    <div class="md-grid">
+      <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--stretch">
+          <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+            
+            
+            <span class="md-header-nav__topic">
+              Atomist Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              About the SDM
+            </span>
+            
+            
+          </div>
+        </div>
+        <div class="md-flex__cell md-flex__cell--shrink">
+          
+          
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!-- Main navigation -->
+<nav class="md-nav md-nav--primary" data-md-level="0">
+
+  <!-- Site title -->
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    Choose Section
+  </label>
+
+  <!-- Repository containing source -->
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/atomist/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Using Atomist
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Using Atomist
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user/dashboard/" title="Atomist Dashboard" class="md-nav__link">
+      Atomist Dashboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user/github/" title="Source Control" class="md-nav__link">
+      Source Control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user/slack/" title="Slack" class="md-nav__link">
+      Slack
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user/lifecycle/" title="Built-in Chat Integrations" class="md-nav__link">
+      Built-in Chat Integrations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user/integrations/" title="Supported Integrations" class="md-nav__link">
+      Supported Integrations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../quick-start/" title="Developer Quick Start" class="md-nav__link">
+      Developer Quick Start
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Developer Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Developer Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="About this guide" class="md-nav__link">
+      About this guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../architecture/" title="Architecture" class="md-nav__link">
+      Architecture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" checked>
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Running an SDM
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        Running an SDM
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        About the SDM
+      </label>
+    
+    <a href="./" title="About the SDM" class="md-nav__link md-nav__link--active">
+      About the SDM
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-an-sdm-project" title="Creating an SDM project" class="md-nav__link">
+    Creating an SDM project
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github" title="GitHub" class="md-nav__link">
+    GitHub
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-at-the-code" title="Looking at the code" class="md-nav__link">
+    Looking at the code
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indexts" title="index.ts" class="md-nav__link">
+    index.ts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#machinets" title="machine.ts" class="md-nav__link">
+    machine.ts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-an-sdm" title="Building an SDM" class="md-nav__link">
+    Building an SDM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-an-sdm" title="Starting an SDM" class="md-nav__link">
+    Starting an SDM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-structure" title="Project structure" class="md-nav__link">
+    Project structure
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#packagejson" title="package.json" class="md-nav__link">
+    package.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lib" title="lib" class="md-nav__link">
+    lib
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indexts_1" title="index.ts" class="md-nav__link">
+    index.ts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#libgraphql" title="lib/graphql" class="md-nav__link">
+    lib/graphql
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#libtypings" title="lib/typings" class="md-nav__link">
+    lib/typings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node_modules" title="node_modules" class="md-nav__link">
+    node_modules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scripts" title="scripts" class="md-nav__link">
+    scripts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test" title="test" class="md-nav__link">
+    test
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stop" title="Stop" class="md-nav__link">
+    Stop
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../prerequisites/" title="Prerequisites" class="md-nav__link">
+      Prerequisites
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../team/" title="Team Mode" class="md-nav__link">
+      Team Mode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../local/" title="Local Mode" class="md-nav__link">
+      Local Mode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sdm-construct/" title="Adding Functionality" class="md-nav__link">
+      Adding Functionality
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sdm-deploy/" title="Deploying your SDM" class="md-nav__link">
+      Deploying your SDM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sdm-debug/" title="Debugging an SDM" class="md-nav__link">
+      Debugging an SDM
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      Goals
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        Goals
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../goal/" title="Create Goals" class="md-nav__link">
+      Create Goals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../set-goals/" title="Setting Goals" class="md-nav__link">
+      Setting Goals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../registration/" title="Registrations" class="md-nav__link">
+      Registrations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      Builds
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        Builds
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../build/" title="Build Goal" class="md-nav__link">
+      Build Goal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user/ci/" title="Integrations" class="md-nav__link">
+      Integrations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../build-event/" title="Reacting to Builds" class="md-nav__link">
+      Reacting to Builds
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../deploy/" title="Deploys" class="md-nav__link">
+      Deploys
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../inspect/" title="Code Inspections" class="md-nav__link">
+      Code Inspections
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
+      Code Transforms
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-8">
+        Code Transforms
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../transform/" title="Transforms" class="md-nav__link">
+      Transforms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../autofix/" title="Autofixes" class="md-nav__link">
+      Autofixes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../project/" title="Project" class="md-nav__link">
+      Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../commands/" title="Commands" class="md-nav__link">
+      Commands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../create/" title="Project Generators" class="md-nav__link">
+      Project Generators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fingerprint/" title="Fingerprints" class="md-nav__link">
+      Fingerprints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-12" type="checkbox" id="nav-4-12">
+    
+    <label class="md-nav__link" for="nav-4-12">
+      Advanced
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-12">
+        Advanced
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sdm-concepts/" title="SDM Concepts" class="md-nav__link">
+      SDM Concepts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config/" title="SDM Configuration" class="md-nav__link">
+      SDM Configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../push-test/" title="Push Tests" class="md-nav__link">
+      Push Tests
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../spawn-builder/" title="Generic Builder" class="md-nav__link">
+      Generic Builder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../http/" title="HTTP Calls in an SDM" class="md-nav__link">
+      HTTP Calls in an SDM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../events/" title="Events" class="md-nav__link">
+      Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../graphql/" title="Custom GraphQL Queries" class="md-nav__link">
+      Custom GraphQL Queries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../slack/" title="Chat Messages" class="md-nav__link">
+      Chat Messages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cli/" title="Command Line Interface" class="md-nav__link">
+      Command Line Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../security/" title="Security Model" class="md-nav__link">
+      Security Model
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../troubleshoot/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Extensions
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Extensions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pack/" title="Extension Packs" class="md-nav__link">
+      Extension Packs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pack/build/" title="Build" class="md-nav__link">
+      Build
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pack/spring/" title="Spring" class="md-nav__link">
+      Spring
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pack/kubernetes/" title="Kubernetes" class="md-nav__link">
+      Kubernetes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pack/pcf/" title="Cloud Foundry" class="md-nav__link">
+      Cloud Foundry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pack/node/" title="Node" class="md-nav__link">
+      Node
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pack/sonarqube/" title="Sonarqube" class="md-nav__link">
+      Sonarqube
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pack/checkstyle/" title="Checkstyle" class="md-nav__link">
+      Checkstyle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pack/docker/" title="Docker" class="md-nav__link">
+      Docker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pack/sloc/" title="Lines of Code" class="md-nav__link">
+      Lines of Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pack/changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../pack/issue/" title="Issue" class="md-nav__link">
+      Issue
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../support/" title="Support" class="md-nav__link">
+      Support
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-an-sdm-project" title="Creating an SDM project" class="md-nav__link">
+    Creating an SDM project
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github" title="GitHub" class="md-nav__link">
+    GitHub
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-at-the-code" title="Looking at the code" class="md-nav__link">
+    Looking at the code
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indexts" title="index.ts" class="md-nav__link">
+    index.ts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#machinets" title="machine.ts" class="md-nav__link">
+    machine.ts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-an-sdm" title="Building an SDM" class="md-nav__link">
+    Building an SDM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-an-sdm" title="Starting an SDM" class="md-nav__link">
+    Starting an SDM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-structure" title="Project structure" class="md-nav__link">
+    Project structure
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#packagejson" title="package.json" class="md-nav__link">
+    package.json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lib" title="lib" class="md-nav__link">
+    lib
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indexts_1" title="index.ts" class="md-nav__link">
+    index.ts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#libgraphql" title="lib/graphql" class="md-nav__link">
+    lib/graphql
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#libtypings" title="lib/typings" class="md-nav__link">
+    lib/typings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node_modules" title="node_modules" class="md-nav__link">
+    node_modules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scripts" title="scripts" class="md-nav__link">
+    scripts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test" title="test" class="md-nav__link">
+    test
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stop" title="Stop" class="md-nav__link">
+    Stop
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/atomist/docs/edit/master/docs/developer/sdm.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>About the SDM</h1>
+                
+                <p>The software delivery machine is a service that runs automations in response to events
+like pushes and builds. See <a href="../architecture/" title="Atomist SDM Architecture">architecture</a> for a high-level view. Your SDM is in TypeScript.
+Start with our code and add what you choose.</p>
+<p>This section documents creating, building, and running an SDM,
+discusses each part of the SDM lifecycle, and details the
+structure and organization of a typical SDM project.</p>
+<p>To get started in <a href="../local/" title="Atomist SDM Local Mode">local mode</a>, make sure you have:</p>
+<ul>
+<li><a href="https://git-scm.com/downloads" title="Install Git">Git</a></li>
+<li><a href="../prerequisites/#nodejs" title="Install Node.js">Node.js</a></li>
+<li><a href="../prerequisites/#atomist-cli" title="Install the Atomist CLI">the Atomist CLI</a></li>
+</ul>
+<p>Before you run in <a href="../team/" title="Atomist SDM Team Mode">team mode</a>, you&rsquo;ll need the <a href="../prerequisites/" title="Atomist Automation Prerequisites">prerequisites</a> page.</p>
+<p>This page will help you:</p>
+<ul>
+<li>create an SDM project</li>
+<li>spin up your SDM</li>
+<li>know where to add functionality to your SDM</li>
+</ul>
+<p>For the quickest path to seeing an SDM do something, use the <a href="../../quick-start/" title="Developer Quick Start">Quick Start</a> instead.</p>
+<h2 id="creating-an-sdm-project">Creating an SDM project</h2>
+<p>The Atomist CLI will generate an empty SDM for you. We
+suggest using the <a href="https://github.com/atomist-seeds/empty-sdm" title="Blank SDM Seed Project">empty-sdm</a> project as a <a href="../create/#seed">seed</a> for
+your project. </p>
+<div class="codehilite"><pre><span></span>atomist create sdm
+</pre></div>
+
+
+<p>For &ldquo;Type of SDM to create, &ldquo;Choose &ldquo;blank&rdquo; to start with an empty SDM, or &ldquo;spring&rdquo; to start with
+an SDM that does useful things for Java Spring services.</p>
+<p>For &ldquo;name of the target repository&rdquo; enter a name for your SDM.</p>
+<p>For &ldquo;target-owner&rdquo;, enter a name for the owner of your project. This corresponds to the 
+GitHub/GitLab organization or BitBucket project you would put the repository under.</p>
+<p>The &ldquo;create sdm&rdquo; <a href="../create/#generator">generator</a> will transform the <a href="https://github.com/atomist-seeds/empty-sdm" title="Blank SDM Seed Project">seed</a> according
+to your answers. Because this generator operates in local mode, it will create a project on your
+filesystem.</p>
+<p>Look in $HOME/atomist/<em>target-owner</em>/<em>name</em> for the new SDM.</p>
+<h3 id="github">GitHub</h3>
+<p>If you prefer the manual route, you can always fork the <a href="https://github.com/atomist-seeds/empty-sdm" title="Blank SDM Seed Project">empty-sdm</a>
+project on GitHub.</p>
+<h2 id="looking-at-the-code">Looking at the code</h2>
+<p>You can use whatever editor or IDE you like. We recommend <a href="https://code.visualstudio.com/" title="VS Code IDE">VSCode</a> because
+it is built for TypeScript (among other languages), it&rsquo;s a good IDE, and it&rsquo;s free.
+With TypeScript and an IDE like VSCode, you get autocompletion that helps you discover
+functionality in the SDM framework.</p>
+<p>Run <code>npm install</code> first so that your IDE will see library code. In Node, all dependencies
+are stored within the project, under the directory <code>node_modules</code>. <code>npm</code> is the dependency manager 
+that gets them there. This directory is listed in <code>.gitignore</code>, so it won&rsquo;t be committed.</p>
+<h3 id="indexts">index.ts</h3>
+<p>Start your inquiry in <code>index.ts</code>.  When an SDM starts up, it looks here to find its configuration.
+The <code>configuration</code> object has opportunities for many, many configuration options. Click into the Configuration type
+or check the <a href="https://atomist.github.io/automation-client/interfaces/_lib_configuration_.configuration.html" title="API Docs for Configuration type">API Docs</a> if you&rsquo;re curious.</p>
+<p>The important part, where you&rsquo;re going to add to your personal SDM, is the function passed to <code>configureSdm</code> in <code>configuration.postProcessors</code>. 
+Unless you change it that function is called <code>machine</code>.</p>
+<h2 id="machinets">machine.ts</h2>
+<p>Click into the <code>machine</code> function in your IDE, or open <code>lib/machine/machine.ts</code> to find it. This function instantiates
+and the returns a SoftwareDeliveryMachine(<a href="https://atomist.github.io/sdm/interfaces/_lib_api_machine_softwaredeliverymachine_.softwaredeliverymachine.html" title="API Docs for SoftwareDeliveryMachine">API docs</a>).</p>
+<p>Inside this function, add functionality to your SDM. You can:</p>
+<ul>
+<li>Add <a href="../goal/">Goals</a> to choose a flow to respond to code push</li>
+<li>Add listeners to various other <a href="../events/">events</a></li>
+<li>Bring in <a href="../../pack/">extension packs</a></li>
+</ul>
+<h2 id="building-an-sdm">Building an SDM</h2>
+<p>SDM projects are written in <a href="https://www.typescriptlang.org/" title="TypeScript">TypeScript</a> and
+run on <a href="https://nodejs.org/en/" title="Node.js">Node.js</a>.  Building an SDM is the same as
+any standard TypeScript or JavaScript project.  First you install the
+project&rsquo;s dependencies:</p>
+<div class="codehilite"><pre><span></span>npm install
+</pre></div>
+
+
+<p>then build the project, linting the TypeScript, compiling the
+TypeScript into JavaScript, generating other required files, and
+running tests:</p>
+<div class="codehilite"><pre><span></span>npm run build
+</pre></div>
+
+
+<h2 id="starting-an-sdm">Starting an SDM</h2>
+<p>There are a few different ways to start the SDM,
+depending on how you are running it.  If you are running the
+SDM locally, you can use the standard NPM <code>start</code>
+command.</p>
+<div class="codehilite"><pre><span></span>npm start
+</pre></div>
+
+
+<p>If you are writing your own SDMs, you probably want a more
+responsive testing environment, having the client restart any time you
+make changes to the source code.  This development
+flow is available with the <code>autostart</code> command.</p>
+<div class="codehilite"><pre><span></span>npm run autostart
+</pre></div>
+
+
+<p>When you deploy your SDM to production, check the recommendations under <a href="../sdm-deploy/#production" title="SDM Production Deployment Considerations">Deploying your SDM</a>.</p>
+<h2 id="project-structure">Project structure</h2>
+<p>SDM projects are organized and behave like any standard
+TypeScript project.</p>
+<h3 id="packagejson">package.json</h3>
+<p>The <code>package.json</code> file defines the metadata and dependencies for the
+project.  In addition, this file defines the standard &ldquo;NPM package
+scripts&rdquo;, i.e., <code>npm run</code> commands, typically available in Node.js
+projects.  Here&rsquo;s a summary of the NPM package scripts available in
+most SDM projects.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>npm install</code></td>
+<td>install all the required packages</td>
+</tr>
+<tr>
+<td><code>npm run autostart</code></td>
+<td>run, refreshing when files change</td>
+</tr>
+<tr>
+<td><code>npm run autotest</code></td>
+<td>run tests every time files change</td>
+</tr>
+<tr>
+<td><code>npm run build</code></td>
+<td>lint, compile, and test</td>
+</tr>
+<tr>
+<td><code>npm run clean</code></td>
+<td>remove stray compiled JavaScript files and build directory</td>
+</tr>
+<tr>
+<td><code>npm run compile</code></td>
+<td>compile all TypeScript into JavaScript</td>
+</tr>
+<tr>
+<td><code>npm run lint</code></td>
+<td>run tslint against the TypeScript</td>
+</tr>
+<tr>
+<td><code>npm run lint:fix</code></td>
+<td>run <code>tslint --fix</code> against the TypeScript</td>
+</tr>
+<tr>
+<td><code>npm start</code></td>
+<td>start the SDM</td>
+</tr>
+<tr>
+<td><code>npm test</code></td>
+<td>run tests</td>
+</tr>
+</tbody>
+</table>
+<h3 id="lib">lib</h3>
+<p>The <code>lib</code> directory contains the TypeScript source code.</p>
+<h4 id="indexts_1">index.ts</h4>
+<p>This is the starting point when you want to look at
+what this SDM might do. </p>
+<h3 id="libgraphql">lib/graphql</h3>
+<p>The <code>graphql</code> directory contains <code>.graphql</code> files defining
+your <a href="http://graphql.org/" title="GraphQL">GraphQL</a> queries, subscriptions, and mutations.  This
+directory is optional, as you can define your GraphQL in strings
+within the source code.  That said, it is recommended that you define
+your GraphQL in <code>.graphql</code> files so you can realize the full benefit
+of its type bindings in TypeScript.</p>
+<h4 id="libtypings">lib/typings</h4>
+<p>The <code>lib/typings</code> directory contains the auto-generated TypeScript
+types for your GraphQL queries, subscriptions, and mutations.</p>
+<h3 id="node_modules">node_modules</h3>
+<p>The <code>node_modules</code> directory contains all the project dependencies, as
+defined in the <code>package.json</code> and installed by NPM.</p>
+<h3 id="scripts">scripts</h3>
+<p>The <code>scripts</code> directory contains various ancillary scripts.  For
+example, this directory might have scripts for building the project on
+CI, publishing the project as an Node.js package, and publishing the
+project&rsquo;s <a href="http://typedoc.org/" title="TypeDoc">TypeDoc</a>.</p>
+<h3 id="test">test</h3>
+<p>The <code>test</code> directory contains the automated tests for the project.
+Typically these are unit tests written using <a href="https://mochajs.org/" title="Mocha">mocha</a>
+and <a href="https://github.com/power-assert-js/power-assert#readme" title="power-assert">power-assert</a>.</p>
+<!--
+## Debugging with Visual Studio Code
+-->
+
+<h2 id="stop">Stop</h2>
+<p>Control-C will stop the client.  Restart it after code changes with
+<code>atomist start</code> again.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../architecture/" title="Architecture" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Architecture
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../prerequisites/" title="Prerequisites" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Prerequisites
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; 2018 Atomist, Inc.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+<div class="md-footer-social">
+  <link rel="stylesheet" href="../../assets/fonts/fix-mime-type-font-awesome.css">
+  
+  <a href="https://the-composition.com/" class="md-footer-social__link fa fa-medium"></a>
+  
+  <a href="https://github.com/atomist" class="md-footer-social__link fa fa-github"></a>
+  
+  <a href="https://twitter.com/atomist" class="md-footer-social__link fa fa-twitter"></a>
+  
+  <a href="https://join.atomist.com/" class="md-footer-social__link fa fa-slack"></a>
+  
+</div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../js/intercom.js"></script>
+      
+        <script src="../../js/mixpanel.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

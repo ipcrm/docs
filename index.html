@@ -1,0 +1,1410 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation for Atomist - How Teams Deliver Software">
+      
+      
+      
+        <meta name="author" content="The Atomist Team">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Atomist Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/fix-mime-type-application.451f80e5.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/fix-mime-type-application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/fix-mime-type-material-icons.css">
+    
+      <link rel="stylesheet" href="stylesheets/fix-mime-type-extra.css">
+    
+    
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MZ8NMFS');</script>
+    <!-- End Google Tag Manager -->
+<link rel="stylesheet" href="https://use.typekit.net/viv5qyy.css">
+
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="white" data-md-color-accent="teal">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#atomist-how-teams-deliver-software" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ8NMFS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="." title="Atomist Documentation" class="md-header-nav__button md-logo">
+          <img src="img/atomist-developer-docs-logo.png" alt="Atomist Developer Docs">
+        </a>
+      </div>
+
+      <div class="md-flex__cell md-flex__cell--stretch visit-main-site">
+        <a href="https://www.atomist.com" target="_blank">Visit Atomist.com &raquo;</a>
+      </div>
+    </div>
+  </nav>
+  <div class="title-and-search-bar">
+    <div class="md-grid">
+      <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--stretch">
+          <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+            
+            
+            <span class="md-header-nav__topic">
+              Atomist Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              Introduction
+            </span>
+            
+            
+          </div>
+        </div>
+        <div class="md-flex__cell md-flex__cell--shrink">
+          
+          
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!-- Main navigation -->
+<nav class="md-nav md-nav--primary" data-md-level="0">
+
+  <!-- Site title -->
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    Choose Section
+  </label>
+
+  <!-- Repository containing source -->
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/atomist/docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Introduction
+      </label>
+    
+    <a href="." title="Introduction" class="md-nav__link md-nav__link--active">
+      Introduction
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-this-better-way" title="What is this better way?" class="md-nav__link">
+    What is this better way?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#but-wait-theres-more" title="But wait, there's more!" class="md-nav__link">
+    But wait, there's more!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stories" title="Stories" class="md-nav__link">
+    Stories
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#you-might-want-to-know" title="You might want to know" class="md-nav__link">
+    You might want to know
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-proceed" title="How to proceed" class="md-nav__link">
+    How to proceed
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Using Atomist
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Using Atomist
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user/dashboard/" title="Atomist Dashboard" class="md-nav__link">
+      Atomist Dashboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user/github/" title="Source Control" class="md-nav__link">
+      Source Control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user/slack/" title="Slack" class="md-nav__link">
+      Slack
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user/lifecycle/" title="Built-in Chat Integrations" class="md-nav__link">
+      Built-in Chat Integrations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user/integrations/" title="Supported Integrations" class="md-nav__link">
+      Supported Integrations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="quick-start/" title="Developer Quick Start" class="md-nav__link">
+      Developer Quick Start
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Developer Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Developer Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/" title="About this guide" class="md-nav__link">
+      About this guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/architecture/" title="Architecture" class="md-nav__link">
+      Architecture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Running an SDM
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        Running an SDM
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/sdm/" title="About the SDM" class="md-nav__link">
+      About the SDM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/prerequisites/" title="Prerequisites" class="md-nav__link">
+      Prerequisites
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/team/" title="Team Mode" class="md-nav__link">
+      Team Mode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/local/" title="Local Mode" class="md-nav__link">
+      Local Mode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/sdm-construct/" title="Adding Functionality" class="md-nav__link">
+      Adding Functionality
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/sdm-deploy/" title="Deploying your SDM" class="md-nav__link">
+      Deploying your SDM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/sdm-debug/" title="Debugging an SDM" class="md-nav__link">
+      Debugging an SDM
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      Goals
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        Goals
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/goal/" title="Create Goals" class="md-nav__link">
+      Create Goals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/set-goals/" title="Setting Goals" class="md-nav__link">
+      Setting Goals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/registration/" title="Registrations" class="md-nav__link">
+      Registrations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      Builds
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        Builds
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/build/" title="Build Goal" class="md-nav__link">
+      Build Goal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user/ci/" title="Integrations" class="md-nav__link">
+      Integrations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/build-event/" title="Reacting to Builds" class="md-nav__link">
+      Reacting to Builds
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/deploy/" title="Deploys" class="md-nav__link">
+      Deploys
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/inspect/" title="Code Inspections" class="md-nav__link">
+      Code Inspections
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
+      Code Transforms
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-8">
+        Code Transforms
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/transform/" title="Transforms" class="md-nav__link">
+      Transforms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/autofix/" title="Autofixes" class="md-nav__link">
+      Autofixes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/project/" title="Project" class="md-nav__link">
+      Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/commands/" title="Commands" class="md-nav__link">
+      Commands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/create/" title="Project Generators" class="md-nav__link">
+      Project Generators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/fingerprint/" title="Fingerprints" class="md-nav__link">
+      Fingerprints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-12" type="checkbox" id="nav-4-12">
+    
+    <label class="md-nav__link" for="nav-4-12">
+      Advanced
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-12">
+        Advanced
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/sdm-concepts/" title="SDM Concepts" class="md-nav__link">
+      SDM Concepts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/config/" title="SDM Configuration" class="md-nav__link">
+      SDM Configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/push-test/" title="Push Tests" class="md-nav__link">
+      Push Tests
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/spawn-builder/" title="Generic Builder" class="md-nav__link">
+      Generic Builder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/http/" title="HTTP Calls in an SDM" class="md-nav__link">
+      HTTP Calls in an SDM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/events/" title="Events" class="md-nav__link">
+      Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/graphql/" title="Custom GraphQL Queries" class="md-nav__link">
+      Custom GraphQL Queries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/slack/" title="Chat Messages" class="md-nav__link">
+      Chat Messages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/cli/" title="Command Line Interface" class="md-nav__link">
+      Command Line Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/security/" title="Security Model" class="md-nav__link">
+      Security Model
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer/troubleshoot/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Extensions
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Extensions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="pack/" title="Extension Packs" class="md-nav__link">
+      Extension Packs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="pack/build/" title="Build" class="md-nav__link">
+      Build
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="pack/spring/" title="Spring" class="md-nav__link">
+      Spring
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="pack/kubernetes/" title="Kubernetes" class="md-nav__link">
+      Kubernetes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="pack/pcf/" title="Cloud Foundry" class="md-nav__link">
+      Cloud Foundry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="pack/node/" title="Node" class="md-nav__link">
+      Node
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="pack/sonarqube/" title="Sonarqube" class="md-nav__link">
+      Sonarqube
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="pack/checkstyle/" title="Checkstyle" class="md-nav__link">
+      Checkstyle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="pack/docker/" title="Docker" class="md-nav__link">
+      Docker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="pack/sloc/" title="Lines of Code" class="md-nav__link">
+      Lines of Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="pack/changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="pack/issue/" title="Issue" class="md-nav__link">
+      Issue
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="support/" title="Support" class="md-nav__link">
+      Support
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-this-better-way" title="What is this better way?" class="md-nav__link">
+    What is this better way?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#but-wait-theres-more" title="But wait, there's more!" class="md-nav__link">
+    But wait, there's more!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stories" title="Stories" class="md-nav__link">
+    Stories
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#you-might-want-to-know" title="You might want to know" class="md-nav__link">
+    You might want to know
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-proceed" title="How to proceed" class="md-nav__link">
+    How to proceed
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/atomist/docs/edit/master/docs/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="atomist-how-teams-deliver-software">Atomist - How Teams Deliver Software</h1>
+<p>Every serious business has its own development and delivery experience. Most of them
+aren&rsquo;t what we want. We want to spend our time and focus solving problems for the business, but to do that well, 
+we need to enact our own blueprint for software delivery.</p>
+<p>So far, enterprises piece together pipeline tools, configured by a plethora of YAML or by hand in a GUI. For
+anything interesting, we resort to a Bash script, the lowest common denominator of programming. 
+We enroll myriad chatbots to spam our channels. We write how-to wiki pages and distribute hand-me-down scripts.
+As our practices improve, older projects languish in prior standards. Meanwhile we shake our heads wistfully over 
+the elegant flow of shiny new delivery tools &ndash; they will never fit our real-world environment.</p>
+<p><img style="float:left; margin-top:7px; margin-right:10px; margin-bottom:10px; margin-left:0px;" src="img/atomist-logo.png" height="100px" width="100px" alt="Atomist logo"/></p>
+<p>Atomist says, there is a better way. A world beyond pipelines, a world of little YAML and Bash,
+a world where we code our way to an appropriate delivery experience, with higher coding standards, 
+up-to-date application suites, and continual improvement.
+And this way begins where we are, not with a big migration.</p>
+<p>The new world is driven by events, not configuration, and we specify our reactions in a modern programming language.
+These events are correlated to each other into a coherent model, an API for Software.
+Developers and automations work together, coordinating in chat. Decisions are for people;
+consistent execution of tedious tasks is for programs.</p>
+<div class="admonition tldr">
+<p class="admonition-title">Escape Bash and YAML</p>
+<p>Tired of managing CI/CD Bash scripts and YAML config across dozens
+of repositories?  Use Atomist to tame the complexity and execute
+your best delivery process across all your repositories.</p>
+</div>
+<h2 id="what-is-this-better-way">What is this better way?</h2>
+<p>Atomist lets you construct your delivery process in code &ndash; but not too much code.
+A service, a framework, and some libraries take care of the pieces that are common to every
+development organization. Atomist works atop your existing toolchain, adding functionality 
+and smoothing your experience; then you&rsquo;re free to improve it.</p>
+<p>The crux of your development experience lives in your <strong>software delivery machine</strong> (SDM).
+This is a service that runs wherever you choose to run it. Start with one of ours,
+then make it yours. Your SDM is in TypeScript (or JavaScript works too), and comes with
+a framework designed for software delivery and development automation. Write functions to make decisions
+or take action, with access to all the code plus the context of the push or build or issue event.
+All of this is open source.</p>
+<p>While you can run an SDM independently and in private to help only yourself, the magic happens
+when it connects to the Atomist service to respond to your whole team or organization.
+The service provides triggering with rich events and custom commands, interactive chat integration,
+and <a href="user/lifecycle/" title="Built-in Chat Integrations">built-in automations</a> like sweet chat messages for standard events like
+code push and issue creation. These chat messages get <em>updated</em> when new information comes in. They include
+useful buttons to take action: raise a PR, label an issue, or approve the next step in the deploy process.</p>
+<p><img alt="Push Lifecycle" src="img/push-notice.png" /></p>
+<h2 id="but-wait-theres-more">But wait, there&rsquo;s more!</h2>
+<p>I&rsquo;ve talked about how your delivery flow can be defined in code instead of Bash, 
+in one open place instead of many narrow pipelines. I mentioned custom commands, where you can ensconce 
+common developer activities in a convenient location, accessible from chat. These commands are code:
+consistent, shared, versioned. You might have gleaned that because your Software Delivery Machine is code, you&rsquo;re
+never limited to plugins, nor to anyone else&rsquo;s idea of the correct delivery mechanism; your SDM can integrate with your existing tools. <a href="https://the-composition.com/one-great-delivery-experience-your-favorite-tools-7f390f57d896" title="One Great Delivery Experience, Your Favorite Tools blog">Keep the tools that are working for you</a>, and integrate new ones
+as you wish. Tie these together with an SDM, plus bonuses like <a href="pack/changelog/" title="Changelog Pack">automatic CHANGELOG management</a>.</p>
+<p>Your SDM gives you something else: the ability to manipulate code across all your projects with one command. 
+Atomist libraries help you write code transforms&ndash;functions that operate on code&ndash;and the API for Software
+turns those into branches, pull requests, or automatic commits on every deviating push. Bring code up to standards
+and then keep it there.</p>
+<p>Your SDM gives you something else: start new projects with the right code and setup, every time. Atomist generators
+start from a real, working project and use code transforms to construct a starting point in a new repository. </p>
+<p>Your SDM can respond to <a href="developer/events/" title="Events Documentation">more events</a>, and to custom events that you send. You can query your correlated events
+using GraphQL. You can build chat commands, with updating messages and adding action buttons. 
+You can <a href="pack/" title="List of Packs">add integrations</a>
+and commands written by Atomist and the community, and contribute your own.</p>
+<h2 id="stories">Stories</h2>
+<p>Check out some samples of what an Atomist SDM can do:</p>
+<ul>
+<li><a href="https://the-composition.com/making-change-stick-with-code-transforms-and-autofixes-587d19e0ba1b" title="Rod blogs about upgrading test file names">Upgrade test files to a new standard</a></li>
+<li><a href="https://the-composition.com/align-the-stars-programmatically-35dc5625f97d" title="Jess blogs about autofixing comment formatting">Enforce custom code formatting</a></li>
+<li><a href="https://the-composition.com/deploy-your-spring-boot-application-to-kubernetes-in-3-mins-fdd37a212c6c" title="Christian Dupuis's Spring Boot to Kubernetes Blog">Deploy Spring Boot to Kubernetes</a>, and generate new projects, and manage versions of existing projects (<a href="https://www.youtube.com/watch?v=VDCHnTPknsI" title="Rod Johnson speaks at Spring One 2018">video</a>)</li>
+<li><a href="https://the-composition.com/automation-story-graphql-schema-deployment-7893eb55ed18" title="Jess blogs about graphql schema deploy">Convert a migration script into a Slack command</a></li>
+</ul>
+<h2 id="you-might-want-to-know">You might want to know</h2>
+<ul>
+<li><a href="user/integrations/" title="Existing Atomist Integrations">Existing integrations</a></li>
+<li><a href="developer/architecture/" title="Atomist Architecture">Architecture</a></li>
+<li><a href="developer/security/" title="Atomist Security Model">Security model</a></li>
+</ul>
+<h2 id="how-to-proceed">How to proceed</h2>
+<ul>
+<li>
+<p>If you want bring the Atomist into your team, you&rsquo;ll get <a href="user/lifecycle/" title="Built-in Chat Integrations">built-in
+    chat integrations</a> immediately. Proceed to the <a href="user/" title="Atomist User Guide">Using
+    Atomist</a> page to get Atomist installed in your Slack
+    workspace, authorized in GitHub, and connected to your continuous
+    integration system.</p>
+</li>
+<li>
+<p>If you want to develop with Atomist, either for your team or for your
+    own local use (with no enrollment), please skip to the <a href="developer/sdm/" title="Atomist Automations Developer Guide">Developer
+    Guide</a> to learn how to create and run your own
+    SDM.</p>
+</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="user/" title="Getting Started" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Getting Started
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; 2018 Atomist, Inc.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+<div class="md-footer-social">
+  <link rel="stylesheet" href="assets/fonts/fix-mime-type-font-awesome.css">
+  
+  <a href="https://the-composition.com/" class="md-footer-social__link fa fa-medium"></a>
+  
+  <a href="https://github.com/atomist" class="md-footer-social__link fa fa-github"></a>
+  
+  <a href="https://twitter.com/atomist" class="md-footer-social__link fa fa-twitter"></a>
+  
+  <a href="https://join.atomist.com/" class="md-footer-social__link fa fa-slack"></a>
+  
+</div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      
+        <script src="js/intercom.js"></script>
+      
+        <script src="js/mixpanel.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
